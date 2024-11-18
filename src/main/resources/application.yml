@@ -1,0 +1,12 @@
+spring:
+  application:
+   name: transaction-stream
+  kafka:
+    topics:
+      transaction_topic: customer_profile_t_transactions
+      average-spending_topic: average-spending
+    streams:
+      bootstrap-servers: PLAINTEXT_HOST://localhost:9092
+      application-id: transaction-streams-app
+    properties:
+      schema.registry.url: "http://localhost:8081"

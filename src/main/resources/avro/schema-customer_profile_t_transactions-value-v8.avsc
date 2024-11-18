@@ -1,0 +1,62 @@
+{
+  "connect.name": "io.confluent.connect.avro.Transactions",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "transaction_ref_number",
+      "type": "string"
+    },
+    {
+      "default": null,
+      "name": "customer_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "account_id",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "transaction_amount",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "transaction_type",
+      "type": "string"
+    },
+    {
+      "name": "created_at",
+      "type": {
+        "connect.name": "org.apache.kafka.connect.data.Timestamp",
+        "connect.version": 1,
+        "logicalType": "timestamp-millis",
+        "type": "long"
+      }
+    },
+    {
+      "name": "updated_at",
+      "type": {
+        "connect.name": "org.apache.kafka.connect.data.Timestamp",
+        "connect.version": 1,
+        "logicalType": "timestamp-millis",
+        "type": "long"
+      }
+    }
+  ],
+  "name": "Transactions",
+  "namespace": "io.confluent.connect.avro",
+  "type": "record"
+}
